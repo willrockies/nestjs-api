@@ -12,20 +12,42 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "john",
+  "password": "john"
+}
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "chris",
+  "password": "chris"
+}
+###
 GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNjkwMDIwNCwiZXhwIjoxNzA2OTg2NjA0fQ.bmm8O3TF1B4iaES7RZ6eSODmJlBup6ubmWgU9DYCwv8
+###
+GET http://localhost:3000/orders/950c4cc5-37a2-4d27-8e94-6225b1713ab6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXJuYW1lIjoiY2hyaXMiLCJpYXQiOjE3MDY4OTY4MDYsImV4cCI6MTcwNjg5Njg2Nn0.FUg4HLe_id5H_S6Bo4TOxjml3jJywoRaOtOQRRxABF8
 ###
 POST http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNjkwMDIwNCwiZXhwIjoxNzA2OTg2NjA0fQ.bmm8O3TF1B4iaES7RZ6eSODmJlBup6ubmWgU9DYCwv8
 Content-Type: application/json
 
 
 {
   "items": [
     {
-      "product_id": "04c4353a-3f6d-4272-a8f2-44b82c05ecc0",
+      "product_id": "121829b9-e9f9-4ca9-bd14-b087afedd587",
       "quantity": 1
     },
     {
-      "product_id": "0afa7630-4fc1-4d69-beed-4f8f15becadc",
+      "product_id": "2261af8a-e453-42e2-b2b0-ea268bb11a41",
       "quantity": 1
     }
   ],

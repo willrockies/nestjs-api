@@ -91,3 +91,13 @@ mysql -uroot -proot
 
 ### fixtuere para popular o banco objeto 
 ### Rodar npm fixture -> popula o banco com insert
+
+### Auth
+gerar nest g resource
+auth -> rest api -> no
+
+### trabalhar com token com a lib jwt
+npm install @nestjs/jwt
+
+## trabalhar com rabbitmq precisa instalar a lib da golevel
+npm install ---save @golevelup/nestjs-rabbitmq
