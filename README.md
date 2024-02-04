@@ -100,4 +100,6 @@ auth -> rest api -> no
 npm install @nestjs/jwt
 
 ## trabalhar com rabbitmq precisa instalar a lib da golevel
-npm install ---save @golevelup/nestjs-rabbitmq
+npm install  @golevelup/nestjs-rabbitmq
+
+
